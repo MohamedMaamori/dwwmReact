@@ -9,8 +9,8 @@ export default function Use(){
         console.log('tu as cliqué sur handleClick')
     }
     useEffect(()=>{
-        if(hiddenMessage && user)console.log('Message:', hiddenMessage)
-    },[hiddenMessage, user])
+        if(hiddenMessage )console.log('Message:', hiddenMessage)
+    },[hiddenMessage])
     return(
         <div>
             <h1>Les uses</h1>
