@@ -2,8 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello'
 import Identity from "./components/Identity";
+import Time from "./components/Time";
+import Use from "./components/Use";
 
-function App() {
+export default function App() {
 
 
   return (
@@ -23,13 +25,15 @@ function App() {
           Learn React
         </a>
           <Hello/>
+          <Time date={new Date()}/>
           <Identity
               name={'Mohamed'}
               bio={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'}
               />
+          <Use/>
       </header>
     </div>
   );
 }
 
-export default App;
+
